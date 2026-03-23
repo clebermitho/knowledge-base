@@ -1,0 +1,154 @@
+{
+  "base_conhecimento": [
+    {
+      "categoria": "negociacao_debitos",
+      "mensagem": "Quero verificar minhas anuidades.",
+      "resposta": "Olá profissional, tudo bem? Ao consultar seu cadastro no sistema do Coren/Sigen, identifiquei algumas anuidades registradas em aberto. Nosso contato é justamente para orientar sobre a regularização e evitar que os valores continuem sofrendo atualização com juros e multa. Podemos verificar algumas condições de pagamento disponíveis no sistema, como pagamento à vista com possível desconto, parcelamento no cartão de crédito ou boleto bancário. Se desejar, posso verificar qual a melhor condição disponível para você neste momento."
+    },
+    {
+      "categoria": "duvida_anuidade",
+      "mensagem": "Por que estou devendo?",
+      "resposta": "As anuidades são uma obrigação prevista na Lei nº 5.905/1973, que regulamenta o funcionamento dos Conselhos de Enfermagem no Brasil. Enquanto o registro do profissional permanece ativo no conselho, as anuidades continuam sendo geradas anualmente. Mesmo que o profissional não esteja exercendo a atividade no momento, o registro precisa estar cancelado ou suspenso formalmente junto ao Coren para interromper a geração de novas anuidades."
+    },
+    {
+      "categoria": "prazo_pagamento",
+      "mensagem": "Posso pagar depois?",
+      "resposta": "Podemos verificar sim um prazo para pagamento. O único ponto importante é que os valores registrados no sistema continuam sendo atualizados com juros e multa conforme legislação vigente. Por isso sempre orientamos que, se possível, o profissional realize a regularização o quanto antes para evitar aumento do débito."
+    },
+    {
+      "categoria": "suspensao_registro",
+      "mensagem": "Quero suspender meu Coren.",
+      "resposta": "A suspensão pode ser solicitada diretamente junto ao Coren quando o profissional não estiver exercendo atividades na área de enfermagem. Para solicitar a suspensão, acesse https://sigen.cofen.gov.br, entre com CPF e senha, localize a opção Solicitações / Suspensão de Inscrição e anexe os documentos solicitados. A suspensão não cancela débitos anteriores, apenas interrompe a geração de novas anuidades."
+    },
+    {
+      "categoria": "cancelamento_registro",
+      "mensagem": "Quero cancelar meu Coren.",
+      "resposta": "O cancelamento do registro deve ser solicitado diretamente ao Conselho Regional de Enfermagem. Acesse https://sigen.cofen.gov.br, entre em Acesso do Profissional, faça login com CPF e senha, vá em Solicitações e selecione Cancelamento de Inscrição. O cancelamento não elimina débitos anteriores, apenas interrompe a geração de novas anuidades após a conclusão do processo."
+    },
+    {
+      "categoria": "ja_suspendeu",
+      "mensagem": "Já fiz a suspensão.",
+      "resposta": "Perfeito. Se puder, me envie o comprovante da suspensão para que possamos verificar se ela já foi registrada no sistema. Caso existam anuidades anteriores à data da suspensão, elas podem continuar registradas."
+    },
+    {
+      "categoria": "ja_cancelou",
+      "mensagem": "Já cancelei.",
+      "resposta": "Perfeito. Se puder, me envie o comprovante do cancelamento para verificarmos em seu cadastro. Caso existam débitos referentes ao período anterior ao cancelamento, eles podem continuar registrados até a regularização."
+    },
+    {
+      "categoria": "nada_consta",
+      "mensagem": "Quero meu nada consta.",
+      "resposta": "O Nada Consta é emitido diretamente pelo sistema do profissional. Acesse https://sigen.cofen.gov.br, clique em Acesso do Profissional, faça login com CPF e senha, vá na opção Certidões e clique em Emitir Nada Consta. O documento somente será liberado quando não houver débitos registrados no sistema."
+    },
+    {
+      "categoria": "nao_trabalho_area",
+      "mensagem": "Não trabalho mais na enfermagem.",
+      "resposta": "Entendemos. No entanto, enquanto o registro permaneceu ativo no Coren, as anuidades continuam sendo geradas conforme legislação. Caso o profissional não pretenda mais exercer a atividade, é possível solicitar suspensão ou cancelamento do registro."
+    },
+    {
+      "categoria": "sem_dinheiro",
+      "mensagem": "Não tenho dinheiro.",
+      "resposta": "Entendo sua situação. Nosso objetivo é evitar que o débito continue sendo atualizado. Podemos verificar condições de pagamento mais acessíveis, como parcelamento ou negociação diferenciada. Qual valor você acredita que conseguiria trabalhar neste momento para iniciarmos a regularização?"
+    },
+    {
+      "categoria": "entrada_acordo",
+      "mensagem": "Tenho que pagar entrada?",
+      "resposta": "Em alguns casos o sistema exige uma primeira parcela maior, principalmente quando houve acordo anterior não confirmado ou quebra de negociação. Vou verificar internamente se conseguimos ajustar a condição para facilitar para você."
+    },
+    {
+      "categoria": "golpe_duvida",
+      "mensagem": "Isso é golpe?",
+      "resposta": "Compreendo sua preocupação. Hoje em dia realmente precisamos ter cuidado. Por isso me identifiquei com nome, empresa e setor de atendimento. Se preferir, você também pode confirmar as informações diretamente pelos canais oficiais do Coren pelo telefone (86) 3200-9999 ou pelo site www.coren-pi.gov.br."
+    },
+    {
+    "pergunta": "não tenho dinheiro",
+    "resposta": "Entendo sua situação. Nosso objetivo é evitar atualização do débito. Podemos verificar uma condição facilitada para ajudar na regularização. Qual valor conseguimos trabalhar hoje?",
+    "categoria": "SEM_DINHEIRO",
+    "palavras_chave": ["dinheiro", "sem condições", "não posso pagar", "valor alto"]
+  },
+  {
+    "pergunta": "isso vai gerar algum problema para mim?",
+    "resposta": "Nosso contato é justamente para evitar qualquer medida futura. A regularização mantém sua situação tranquila perante o conselho.",
+    "categoria": "DUVIDA",
+    "palavras_chave": ["problema", "consequência", "risco"]
+  },
+  {
+    "pergunta": "vou pagar mês que vem",
+    "resposta": "Nosso objetivo é evitar atualização do débito, assim como impactos em sua carreira profissional como registro irregular, bloqueio para emitir certidões, risco em concursos e processos seletivos e restrição no cadastro.",
+    "categoria": "NEGOCIACAO",
+    "palavras_chave": ["depois", "mês que vem", "adiar pagamento"]
+  },
+  {
+    "pergunta": "isso é golpe",
+    "resposta": "Compreendo sua preocupação. Você pode confirmar as informações diretamente pelos canais oficiais do conselho. Nosso objetivo é apenas orientar e ajudar na regularização.",
+    "categoria": "GOLPE",
+    "palavras_chave": ["golpe", "fraude", "desconfiança"]
+  },
+  {
+    "pergunta": "não estou trabalhando na enfermagem",
+    "resposta": "Mesmo não atuando, o registro permaneceu ativo, gerando obrigação legal. Regularizando, você evita protesto, execução fiscal e bloqueio de contas.",
+    "categoria": "NEGOCIACAO",
+    "palavras_chave": ["não trabalho", "parei", "não atuo"]
+  },
+  {
+    "pergunta": "quero cancelar",
+    "resposta": "O cancelamento deve ser solicitado pelo Sigen. Após isso, é necessário entregar ou enviar a carteirinha para finalizar o processo. Débitos anteriores continuam ativos",
+    "categoria": "CANCELAMENTO",
+    "palavras_chave": ["cancelar", "encerrar", "parar registro"]
+  },
+  {
+    "pergunta": "quero suspender meu registro",
+    "resposta": "A suspensão é feita pelo Sigen. Durante esse período, não há cobrança de anuidade e o registro fica temporariamente inativo. Débitos anteriores continuam ativos",
+    "categoria": "SUSPENSAO",
+    "palavras_chave": ["suspender", "pausar registro"]
+  },
+  {
+    "pergunta": "não vou pagar",
+    "resposta": "O não pagamento pode gerar dívida ativa e cobrança judicial, pois o Coren é um órgão público.",
+    "categoria": "NEGOCIACAO",
+    "palavras_chave": ["não pagar", "recusa"]
+  },
+  {
+    "pergunta": "estou desempregado",
+    "resposta": "Entendo sua situação. Existem condições facilitadas com parcelamento e descontos. Posso verificar a melhor opção para você.",
+    "categoria": "SEM_DINHEIRO",
+    "palavras_chave": ["desempregado", "sem renda"]
+  },
+  {
+    "pergunta": "eu não sabia que estava devendo",
+    "resposta": "Pode acontecer por dados desatualizados, mas a cobrança continua válida. Podemos resolver agora com condições facilitadas.",
+    "categoria": "DUVIDA",
+    "palavras_chave": ["não sabia", "desconhecimento"]
+  },
+  {
+    "pergunta": "quais as vantagens de estar regular",
+    "resposta": "Quando seu Coren está regular, você atua dentro da lei, com respaldo legal e proteção profissional. Sua anuidade em dia garante segurança jurídica, participação em concursos, emissão de documentos e benefícios exclusivos.",
+    "categoria": "DUVIDA",
+    "palavras_chave": ["vantagens", "benefícios"]
+  },
+  {
+    "pergunta": "endereço coren pi",
+    "resposta": "Rua Magalhães Filho, 655 – Centro/Sul, Teresina – PI, CEP 64001-350. Telefone: (86) 3200-9999. E-mail: protocolo@coren-pi.org.br",
+    "categoria": "OUTROS",
+    "palavras_chave": ["endereço", "localização", "coren pi"]
+  },
+  {
+    "pergunta": "endereço parnaíba",
+    "resposta": "Rua Pedro II, 1526, Centro, Parnaíba – PI.",
+    "categoria": "OUTROS",
+    "palavras_chave": ["parnaíba", "endereço"]
+  },
+  {
+    "pergunta": "endereço picos",
+    "resposta": "Rua do Cruzeiro, 229, Centro, Picos – PI.",
+    "categoria": "OUTROS",
+    "palavras_chave": ["picos", "endereço"]
+  },
+  {
+    "pergunta": "endereço floriano",
+    "resposta": "Rua Fernando Marques, 520, Centro, Floriano – PI.",
+    "categoria": "OUTROS",
+    "palavras_chave": ["floriano", "endereço"]
+  }
+]
+}
