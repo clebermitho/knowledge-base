@@ -1,0 +1,64 @@
+name: CI/CD Knowledge Base
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate all JSON files
+        run: |
+          echo "Validating JSON files..."
+          errors=0
+          for file in *.json; do
+            if [ -f "$file" ]; then
+              if node -e "JSON.parse(require('fs').readFileSync('$file','utf8'))" 2>/dev/null; then
+                echo "✅ $file"
+              else
+                echo "❌ $file — Invalid JSON"
+                errors=$((errors + 1))
+              fi
+            fi
+          done
+          if [ $errors -gt 0 ]; then echo "Found $errors invalid JSON file(s)"; exit 1; fi
+
+      - name: Validate knowledge base structure
+        run: |
+          node -e "
+            const fs = require('fs');
+            const base = JSON.parse(fs.readFileSync('base_coren.json', 'utf8'));
+            if (!base.base_conhecimento || !Array.isArray(base.base_conhecimento)) {
+              console.error('❌ base_coren.json: missing base_conhecimento array');
+              process.exit(1);
+            }
+            console.log('✅ base_coren.json: ' + base.base_conhecimento.length + ' entries');
+
+            const ia = JSON.parse(fs.readFileSync('programação ia.json', 'utf8'));
+            const requiredKeys = ['project', 'role', 'knowledge_base', 'common_objections', 'response_structure', 'forbidden_behaviors'];
+            const missing = requiredKeys.filter(k => !ia[k]);
+            if (missing.length) {
+              console.error('❌ programação ia.json: missing keys:', missing);
+              process.exit(1);
+            }
+            console.log('✅ programação ia.json: all required keys present');
+          "
+
+      - name: Check VERSION file
+        run: |
+          if [ ! -f "VERSION" ]; then echo "❌ VERSION file missing"; exit 1; fi
+          echo "✅ VERSION: $(cat VERSION)"
