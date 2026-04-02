@@ -39,24 +39,66 @@ jobs:
 
       - name: Validate knowledge base structure
         run: |
-          node -e "
-            const fs = require('fs');
-            const base = JSON.parse(fs.readFileSync('base_coren.json', 'utf8'));
-            if (!base.base_conhecimento || !Array.isArray(base.base_conhecimento)) {
-              console.error('❌ base_coren.json: missing base_conhecimento array');
-              process.exit(1);
-            }
-            console.log('✅ base_coren.json: ' + base.base_conhecimento.length + ' entries');
+          node << 'EOF'
+          const fs = require('fs');
+          const crypto = require('crypto');
 
-            const ia = JSON.parse(fs.readFileSync('programação ia.json', 'utf8'));
-            const requiredKeys = ['project', 'role', 'knowledge_base', 'common_objections', 'response_structure', 'forbidden_behaviors'];
-            const missing = requiredKeys.filter(k => !ia[k]);
+          // Validate base_coren.json (schema v1.3.0+)
+          const base = JSON.parse(fs.readFileSync('base_coren.json', 'utf8'));
+          if (!base.base_conhecimento || !Array.isArray(base.base_conhecimento)) {
+            console.error('❌ base_coren.json: missing base_conhecimento array');
+            process.exit(1);
+          }
+
+          const requiredEntryFields = ['id', 'categoria', 'pergunta', 'resposta', 'palavras_chave', 'metadata'];
+          const requiredMetaFields = ['versao', 'hash', 'origem', 'criado_em', 'atualizado_em', 'ativo'];
+          let errors = 0;
+          const seenIds = new Set();
+          const seenHashes = new Set();
+
+          base.base_conhecimento.forEach((entry, i) => {
+            const missing = requiredEntryFields.filter(f => entry[f] === undefined);
             if (missing.length) {
-              console.error('❌ programação ia.json: missing keys:', missing);
-              process.exit(1);
+              console.error('❌ base_coren.json[' + i + ']: missing fields:', missing.join(', '));
+              errors++;
             }
-            console.log('✅ programação ia.json: all required keys present');
-          "
+            if (entry.metadata) {
+              const missingMeta = requiredMetaFields.filter(f => entry.metadata[f] === undefined);
+              if (missingMeta.length) {
+                console.error('❌ base_coren.json[' + i + '].metadata: missing fields:', missingMeta.join(', '));
+                errors++;
+              }
+            }
+            if (entry.id) {
+              if (seenIds.has(entry.id)) {
+                console.error('❌ base_coren.json[' + i + ']: duplicate id:', entry.id);
+                errors++;
+              }
+              seenIds.add(entry.id);
+            }
+            if (entry.metadata && entry.metadata.hash) {
+              if (seenHashes.has(entry.metadata.hash)) {
+                console.error('❌ base_coren.json[' + i + ']: duplicate hash (possible duplicate entry):', entry.metadata.hash);
+                errors++;
+              }
+              seenHashes.add(entry.metadata.hash);
+            }
+          });
+
+          if (errors > 0) { process.exit(1); }
+          console.log('✅ base_coren.json: ' + base.base_conhecimento.length + ' entries (schema v' + (base.schema_version || 'legacy') + ')');
+
+          // Validate ia_config.json (canonical name) and legacy programação ia.json for backward compatibility
+          const iaFile = fs.existsSync('ia_config.json') ? 'ia_config.json' : 'programação ia.json';
+          const ia = JSON.parse(fs.readFileSync(iaFile, 'utf8'));
+          const requiredKeys = ['project', 'role', 'knowledge_base', 'common_objections', 'response_structure', 'forbidden_behaviors'];
+          const missing = requiredKeys.filter(k => !ia[k]);
+          if (missing.length) {
+            console.error('❌ ' + iaFile + ': missing keys:', missing.join(', '));
+            process.exit(1);
+          }
+          console.log('✅ ' + iaFile + ': all required keys present');
+          EOF
 
       - name: Check VERSION file
         run: |

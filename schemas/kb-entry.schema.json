@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/clebermitho/knowledge-base/schemas/kb-entry.schema.json",
+  "title": "Knowledge Base Entry",
+  "description": "Schema canônico para entradas da base de conhecimento Coren/Cofen (v1.3.0+)",
+  "type": "object",
+  "required": ["schema_version", "base_conhecimento"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Versão do schema da base de conhecimento",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "base_conhecimento": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/definitions/KBEntry" }
+    }
+  },
+  "definitions": {
+    "KBEntry": {
+      "type": "object",
+      "required": ["id", "categoria", "pergunta", "resposta", "palavras_chave", "metadata"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Identificador único da entrada",
+          "pattern": "^kb_[a-z0-9_]+$"
+        },
+        "categoria": {
+          "type": "string",
+          "description": "Categoria normalizada (snake_case)",
+          "enum": [
+            "negociacao_debitos",
+            "duvida_anuidade",
+            "prazo_pagamento",
+            "suspensao_registro",
+            "cancelamento_registro",
+            "ja_suspendeu",
+            "ja_cancelou",
+            "nada_consta",
+            "nao_trabalho_area",
+            "sem_dinheiro",
+            "entrada_acordo",
+            "golpe_duvida",
+            "consequencias_debito",
+            "desempregado",
+            "nao_vai_pagar",
+            "nao_sabia_debito",
+            "vantagens_regularizacao",
+            "endereco_coren",
+            "outros"
+          ]
+        },
+        "pergunta": {
+          "type": "string",
+          "description": "Gatilho ou pergunta do cliente (campo canônico)",
+          "minLength": 3
+        },
+        "resposta": {
+          "type": "string",
+          "description": "Resposta orientativa completa",
+          "minLength": 10
+        },
+        "palavras_chave": {
+          "type": "array",
+          "description": "Termos para busca por palavra-chave",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 2 }
+        },
+        "metadata": {
+          "type": "object",
+          "required": ["versao", "hash", "origem", "criado_em", "atualizado_em", "ativo"],
+          "additionalProperties": false,
+          "properties": {
+            "versao": {
+              "type": "string",
+              "description": "Versão semântica desta entrada",
+              "pattern": "^\\d+\\.\\d+\\.\\d+$"
+            },
+            "hash": {
+              "type": "string",
+              "description": "Hash SHA-256 do conteúdo normalizado (sha256:{64 hex chars})",
+              "pattern": "^sha256:[a-f0-9]{64}$"
+            },
+            "origem": {
+              "type": "string",
+              "description": "Fonte/origem desta entrada",
+              "minLength": 3
+            },
+            "criado_em": {
+              "type": "string",
+              "description": "Data de criação em ISO 8601",
+              "format": "date-time"
+            },
+            "atualizado_em": {
+              "type": "string",
+              "description": "Data da última atualização em ISO 8601",
+              "format": "date-time"
+            },
+            "ativo": {
+              "type": "boolean",
+              "description": "Se false, entrada desativada (soft delete)"
+            },
+            "tags": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}
