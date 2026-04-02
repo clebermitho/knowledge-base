@@ -15,7 +15,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:6d3965e2653f2283",
+        "hash": "sha256:6d3965e2653f228396a8a0c70581ef9dcdb367f83774acef72bd35bb1ce994c4",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -36,7 +36,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:4a10a1c0d3ff4e0c",
+        "hash": "sha256:4a10a1c0d3ff4e0c237b545f2c5e3cef86cf80d4298d7b89a3af85d0cd3c9af4",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -57,7 +57,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:5de2643ea580c366",
+        "hash": "sha256:5de2643ea580c366a0370e51d5a75b5bb097f5e52679cbc7dd18dba833090999",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -77,7 +77,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:6f6d837b91ff93f1",
+        "hash": "sha256:6f6d837b91ff93f1152d7c6b32f7c13ee3d19d3f40792183c839b8263c64bb80",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -98,7 +98,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:6816eac7d9dceb38",
+        "hash": "sha256:6816eac7d9dceb38d3f6e22fc870ba320723a776b75ff60b229d98c91b5308de",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -117,7 +117,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:d7603614df6b14a8",
+        "hash": "sha256:d7603614df6b14a8202307de68aa6438da38a9072a2820b36cc969b185031dc1",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -136,7 +136,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:0c3986151b994b6f",
+        "hash": "sha256:0c3986151b994b6fb4a65b7b278b1947b86f7669889af2e25e38c7cda6d3c50e",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -156,7 +156,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:e185814d99dc2e25",
+        "hash": "sha256:e185814d99dc2e2524685b6625eb4db7c1be9f458a252103a22f99b40f08ceda",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -177,7 +177,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:f50658951cce91fe",
+        "hash": "sha256:f50658951cce91fedc53f0a68314f2de261d384103fe909346e5fba7ab8d340f",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -198,7 +198,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:e9f34798c6b624fa",
+        "hash": "sha256:e9f34798c6b624fa9f29e3a0a3d9aa9436aebc1737bb8dd097a9ebafab12660c",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -218,7 +218,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:711183a87ca6979d",
+        "hash": "sha256:711183a87ca6979daf858be342a3dc6031b49a3233bb0c09a15b1d3dff30bf65",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -239,7 +239,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:b41894c900599d76",
+        "hash": "sha256:b41894c900599d765fc0e0bd849f1aac85ab0a394575b125f6f62838d16b5d5d",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -259,7 +259,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:4c300652fe193bd1",
+        "hash": "sha256:4c300652fe193bd11c72a96034a0b1de05296c5b1eb4115dc3f08e1c1e7bbc80",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -279,7 +279,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:d29fe99d0197a9fb",
+        "hash": "sha256:d29fe99d0197a9fb4b5cd456a0cc311cd6c385a72016643ff96d97b77b9f3e19",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -298,7 +298,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:91500b4a3ee6f059",
+        "hash": "sha256:91500b4a3ee6f059d6ee1bd6862e4df99f4340f8efd1cf2eb057900a1e0d8578",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -317,7 +317,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:88080d86826ac37b",
+        "hash": "sha256:88080d86826ac37bb67cada87b82fab3b136d93134b5731719282dd3a490609b",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -337,7 +337,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:0d07206bc3156807",
+        "hash": "sha256:0d07206bc31568074dcae46c397baf69db881c41dc0ea0c797ec945ccbcd8593",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -356,7 +356,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:2f23cdab6d02974c",
+        "hash": "sha256:2f23cdab6d02974c9dda9438280f9ad6b638e7051e90418eb659292194188051",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -376,7 +376,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:09c52a7ef808b516",
+        "hash": "sha256:09c52a7ef808b516ec9561ab527780936427fb437c2e83785735420433125c08",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -395,7 +395,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:0cec4d68687a4642",
+        "hash": "sha256:0cec4d68687a4642378c9e4ee10942d94a56c16f176ba00085e179e8c1a637cf",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -414,7 +414,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:cc749aafbab203fa",
+        "hash": "sha256:cc749aafbab203fa96bc3fd70b74d896eb191aad423ca2fa0469c7e8b105efcc",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",
@@ -433,7 +433,7 @@
       ],
       "metadata": {
         "versao": "1.0.0",
-        "hash": "sha256:c3b5028e6964dd56",
+        "hash": "sha256:c3b5028e6964dd56a67544a9367bb04b91c185a3d5e61ee7e2651781c6a4d93e",
         "origem": "manual_coren_pi_v1",
         "criado_em": "2026-03-29T00:00:00Z",
         "atualizado_em": "2026-04-02T00:00:00Z",

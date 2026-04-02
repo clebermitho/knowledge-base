@@ -34,7 +34,7 @@ Cada entrada segue o schema canônico v1.3.0:
   "palavras_chave": ["anuidade", "verificar", "débito"],
   "metadata": {
     "versao": "1.0.0",
-    "hash": "sha256:a1b2c3d4e5f6a7b8",
+    "hash": "sha256:6d3965e2653f228396a8a0c70581ef9dcdb367f83774acef72bd35bb1ce994c4",
     "origem": "manual_coren_pi_v1",
     "criado_em": "2026-03-29T00:00:00Z",
     "atualizado_em": "2026-04-02T00:00:00Z",
