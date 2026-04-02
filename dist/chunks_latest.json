@@ -1,0 +1,365 @@
+{
+  "meta": {
+    "version": "1.3.0",
+    "generated_at": "2026-04-02T21:29:32.271354+00:00",
+    "total_chunks": 27,
+    "sources": [
+      "base_coren.json",
+      "programação ia.json"
+    ],
+    "pipeline_hash": "bc11b699af269f5dd8ba6e750cc41815ab260541df97c79212d9f236143c7ecb",
+    "schema_version": "1.0"
+  },
+  "chunks": [
+    {
+      "id": "f8a822525a32c69e",
+      "chunk_index": 0,
+      "source": "base_coren.json",
+      "category": "negociacao_debitos",
+      "text": "Quero verificar minhas anuidades.",
+      "response": "Olá profissional, tudo bem? Ao consultar seu cadastro no sistema do Coren/Sigen, identifiquei algumas anuidades registradas em aberto. Nosso contato é justamente para orientar sobre a regularização e evitar que os valores continuem sofrendo atualização com juros e multa. Podemos verificar algumas condições de pagamento disponíveis no sistema, como pagamento à vista com possível desconto, parcelamento no cartão de crédito ou boleto bancário. Se desejar, posso verificar qual a melhor condição disponível para você neste momento.",
+      "keywords": [],
+      "version": "1.3.0",
+      "hash": "f8a822525a32c69ef604b77d1ae107ce9631b53ccf1c671a862e4a92df48a4f8"
+    },
+    {
+      "id": "41486527db69e2f3",
+      "chunk_index": 1,
+      "source": "base_coren.json",
+      "category": "duvida_anuidade",
+      "text": "Por que estou devendo?",
+      "response": "As anuidades são uma obrigação prevista na Lei nº 5.905/1973, que regulamenta o funcionamento dos Conselhos de Enfermagem no Brasil. Enquanto o registro do profissional permanece ativo no conselho, as anuidades continuam sendo geradas anualmente. Mesmo que o profissional não esteja exercendo a atividade no momento, o registro precisa estar cancelado ou suspenso formalmente junto ao Coren para interromper a geração de novas anuidades.",
+      "keywords": [],
+      "version": "1.3.0",
+      "hash": "41486527db69e2f3427ca5bda21c557d8270a0628fd5532271ec32ed0ebf620b"
+    },
+    {
+      "id": "b9cbf85e3cc00c86",
+      "chunk_index": 2,
+      "source": "base_coren.json",
+      "category": "prazo_pagamento",
+      "text": "Posso pagar depois?",
+      "response": "Podemos verificar sim um prazo para pagamento. O único ponto importante é que os valores registrados no sistema continuam sendo atualizados com juros e multa conforme legislação vigente. Por isso sempre orientamos que, se possível, o profissional realize a regularização o quanto antes para evitar aumento do débito.",
+      "keywords": [],
+      "version": "1.3.0",
+      "hash": "b9cbf85e3cc00c8650cd39bb0e0a1ad61aeeb01d15bd85bcd3292d0f6f5661ca"
+    },
+    {
+      "id": "3ba6fe4bbcc0a392",
+      "chunk_index": 3,
+      "source": "base_coren.json",
+      "category": "suspensao_registro",
+      "text": "Quero suspender meu Coren.",
+      "response": "A suspensão pode ser solicitada diretamente junto ao Coren quando o profissional não estiver exercendo atividades na área de enfermagem. Para solicitar a suspensão, acesse https://sigen.cofen.gov.br, entre com CPF e senha, localize a opção Solicitações / Suspensão de Inscrição e anexe os documentos solicitados. A suspensão não cancela débitos anteriores, apenas interrompe a geração de novas anuidades.",
+      "keywords": [],
+      "version": "1.3.0",
+      "hash": "3ba6fe4bbcc0a392dff08890d58919db85f4442e229108b7c1abb5f401c49a89"
+    },
+    {
+      "id": "05f1f420af131741",
+      "chunk_index": 4,
+      "source": "base_coren.json",
+      "category": "cancelamento_registro",
+      "text": "Quero cancelar meu Coren.",
+      "response": "O cancelamento do registro deve ser solicitado diretamente ao Conselho Regional de Enfermagem. Acesse https://sigen.cofen.gov.br, entre em Acesso do Profissional, faça login com CPF e senha, vá em Solicitações e selecione Cancelamento de Inscrição. O cancelamento não elimina débitos anteriores, apenas interrompe a geração de novas anuidades após a conclusão do processo.",
+      "keywords": [],
+      "version": "1.3.0",
+      "hash": "05f1f420af131741b149808c5b4f201c32faff27632caec0894f7ba1b18f5721"
+    },
+    {
+      "id": "0eab13f2dd09a4ba",
+      "chunk_index": 5,
+      "source": "base_coren.json",
+      "category": "ja_suspendeu",
+      "text": "Já fiz a suspensão.",
+      "response": "Perfeito. Se puder, me envie o comprovante da suspensão para que possamos verificar se ela já foi registrada no sistema. Caso existam anuidades anteriores à data da suspensão, elas podem continuar registradas.",
+      "keywords": [],
+      "version": "1.3.0",
+      "hash": "0eab13f2dd09a4ba217c6d3cc8529cd7a2b396105ffc4b62866da3cc60bf290f"
+    },
+    {
+      "id": "73fa4fa6ebc4271a",
+      "chunk_index": 6,
+      "source": "base_coren.json",
+      "category": "ja_cancelou",
+      "text": "Já cancelei.",
+      "response": "Perfeito. Se puder, me envie o comprovante do cancelamento para verificarmos em seu cadastro. Caso existam débitos referentes ao período anterior ao cancelamento, eles podem continuar registrados até a regularização.",
+      "keywords": [],
+      "version": "1.3.0",
+      "hash": "73fa4fa6ebc4271a494cfe540cb25d079ffe909f1cff7456be374953c3a5ba4b"
+    },
+    {
+      "id": "6ea837660144677c",
+      "chunk_index": 7,
+      "source": "base_coren.json",
+      "category": "nada_consta",
+      "text": "Quero meu nada consta.",
+      "response": "O Nada Consta é emitido diretamente pelo sistema do profissional. Acesse https://sigen.cofen.gov.br, clique em Acesso do Profissional, faça login com CPF e senha, vá na opção Certidões e clique em Emitir Nada Consta. O documento somente será liberado quando não houver débitos registrados no sistema.",
+      "keywords": [],
+      "version": "1.3.0",
+      "hash": "6ea837660144677c3dc68cd4af2f1668ea3f7fe3969b2cadffe55e3e8535caff"
+    },
+    {
+      "id": "d056962733484af6",
+      "chunk_index": 8,
+      "source": "base_coren.json",
+      "category": "nao_trabalho_area",
+      "text": "Não trabalho mais na enfermagem.",
+      "response": "Entendemos. No entanto, enquanto o registro permaneceu ativo no Coren, as anuidades continuam sendo geradas conforme legislação. Caso o profissional não pretenda mais exercer a atividade, é possível solicitar suspensão ou cancelamento do registro.",
+      "keywords": [],
+      "version": "1.3.0",
+      "hash": "d056962733484af637648c3a8644b32ff8cb1422a4f33f73ce912438b5545ed9"
+    },
+    {
+      "id": "dba8810ac70f0e28",
+      "chunk_index": 9,
+      "source": "base_coren.json",
+      "category": "sem_dinheiro",
+      "text": "Não tenho dinheiro.",
+      "response": "Entendo sua situação. Nosso objetivo é evitar que o débito continue sendo atualizado. Podemos verificar condições de pagamento mais acessíveis, como parcelamento ou negociação diferenciada. Qual valor você acredita que conseguiria trabalhar neste momento para iniciarmos a regularização?",
+      "keywords": [],
+      "version": "1.3.0",
+      "hash": "dba8810ac70f0e28ed5c029591dd47b2b1f7ac711431754718cf27041a798025"
+    },
+    {
+      "id": "63aee60603e9bf1d",
+      "chunk_index": 10,
+      "source": "base_coren.json",
+      "category": "entrada_acordo",
+      "text": "Tenho que pagar entrada?",
+      "response": "Em alguns casos o sistema exige uma primeira parcela maior, principalmente quando houve acordo anterior não confirmado ou quebra de negociação. Vou verificar internamente se conseguimos ajustar a condição para facilitar para você.",
+      "keywords": [],
+      "version": "1.3.0",
+      "hash": "63aee60603e9bf1d98c200e11643222a0922a9a13b9c52f10b4884a3e75c9332"
+    },
+    {
+      "id": "ea7c5e721479681c",
+      "chunk_index": 11,
+      "source": "base_coren.json",
+      "category": "golpe_duvida",
+      "text": "Isso é golpe?",
+      "response": "Compreendo sua preocupação. Hoje em dia realmente precisamos ter cuidado. Por isso me identifiquei com nome, empresa e setor de atendimento. Se preferir, você também pode confirmar as informações diretamente pelos canais oficiais do Coren pelo telefone (86) 3200-9999 ou pelo site www.coren-pi.gov.br.",
+      "keywords": [],
+      "version": "1.3.0",
+      "hash": "ea7c5e721479681c7aa9cf9fafe4b986be9ea9a5123b00537da00359052d8231"
+    },
+    {
+      "id": "b7ca22f40aa88f9a",
+      "chunk_index": 12,
+      "source": "base_coren.json",
+      "category": "sem_dinheiro",
+      "text": "não tenho dinheiro",
+      "response": "Entendo sua situação. Nosso objetivo é evitar atualização do débito. Podemos verificar uma condição facilitada para ajudar na regularização. Qual valor conseguimos trabalhar hoje?",
+      "keywords": [
+        "dinheiro",
+        "sem condições",
+        "não posso pagar",
+        "valor alto"
+      ],
+      "version": "1.3.0",
+      "hash": "b7ca22f40aa88f9aab4d336a7b58d868fba7d827d86ef15a72d91ece2aae7e39"
+    },
+    {
+      "id": "5c59b6ef924c2b29",
+      "chunk_index": 13,
+      "source": "base_coren.json",
+      "category": "duvida",
+      "text": "isso vai gerar algum problema para mim?",
+      "response": "Nosso contato é justamente para evitar qualquer medida futura. A regularização mantém sua situação tranquila perante o conselho.",
+      "keywords": [
+        "problema",
+        "consequência",
+        "risco"
+      ],
+      "version": "1.3.0",
+      "hash": "5c59b6ef924c2b2993f64fcd6408e364e003878dc0df840c4c624522f75ef336"
+    },
+    {
+      "id": "b21139fb6b985a43",
+      "chunk_index": 14,
+      "source": "base_coren.json",
+      "category": "negociacao",
+      "text": "vou pagar mês que vem",
+      "response": "Nosso objetivo é evitar atualização do débito, assim como impactos em sua carreira profissional como registro irregular, bloqueio para emitir certidões, risco em concursos e processos seletivos e restrição no cadastro.",
+      "keywords": [
+        "depois",
+        "mês que vem",
+        "adiar pagamento"
+      ],
+      "version": "1.3.0",
+      "hash": "b21139fb6b985a4351a63ff88dc22fa83217be3d049c0b090e18e7d0c27b955b"
+    },
+    {
+      "id": "58692d7e10f06dc9",
+      "chunk_index": 15,
+      "source": "base_coren.json",
+      "category": "golpe",
+      "text": "isso é golpe",
+      "response": "Compreendo sua preocupação. Você pode confirmar as informações diretamente pelos canais oficiais do conselho. Nosso objetivo é apenas orientar e ajudar na regularização.",
+      "keywords": [
+        "golpe",
+        "fraude",
+        "desconfiança"
+      ],
+      "version": "1.3.0",
+      "hash": "58692d7e10f06dc944f07710198c33084eafd65e0777bde48c41fb4140bcbcec"
+    },
+    {
+      "id": "0770fcf9888683cf",
+      "chunk_index": 16,
+      "source": "base_coren.json",
+      "category": "negociacao",
+      "text": "não estou trabalhando na enfermagem",
+      "response": "Mesmo não atuando, o registro permaneceu ativo, gerando obrigação legal. Regularizando, você evita protesto, execução fiscal e bloqueio de contas.",
+      "keywords": [
+        "não trabalho",
+        "parei",
+        "não atuo"
+      ],
+      "version": "1.3.0",
+      "hash": "0770fcf9888683cfec573dded3dc867ace57af36a9eb2439696b0da75979f649"
+    },
+    {
+      "id": "b99ffeaa14dcf468",
+      "chunk_index": 17,
+      "source": "base_coren.json",
+      "category": "cancelamento",
+      "text": "quero cancelar",
+      "response": "O cancelamento deve ser solicitado pelo Sigen. Após isso, é necessário entregar ou enviar a carteirinha para finalizar o processo. Débitos anteriores continuam ativos",
+      "keywords": [
+        "cancelar",
+        "encerrar",
+        "parar registro"
+      ],
+      "version": "1.3.0",
+      "hash": "b99ffeaa14dcf468b9dd1d1993f408fe3509d8ae85f9dc6fdc17e137fdb17ee8"
+    },
+    {
+      "id": "7129fd540ceb2089",
+      "chunk_index": 18,
+      "source": "base_coren.json",
+      "category": "suspensao",
+      "text": "quero suspender meu registro",
+      "response": "A suspensão é feita pelo Sigen. Durante esse período, não há cobrança de anuidade e o registro fica temporariamente inativo. Débitos anteriores continuam ativos",
+      "keywords": [
+        "suspender",
+        "pausar registro"
+      ],
+      "version": "1.3.0",
+      "hash": "7129fd540ceb20894d13c56c5a7fcbdbb65767a923bac9dbca4076843ba3814d"
+    },
+    {
+      "id": "28b200cba41823fc",
+      "chunk_index": 19,
+      "source": "base_coren.json",
+      "category": "negociacao",
+      "text": "não vou pagar",
+      "response": "O não pagamento pode gerar dívida ativa e cobrança judicial, pois o Coren é um órgão público.",
+      "keywords": [
+        "não pagar",
+        "recusa"
+      ],
+      "version": "1.3.0",
+      "hash": "28b200cba41823fcac917727a59e6386065b803c017b7016d3c0fe724f0c1ced"
+    },
+    {
+      "id": "6188d32543e8c10e",
+      "chunk_index": 20,
+      "source": "base_coren.json",
+      "category": "sem_dinheiro",
+      "text": "estou desempregado",
+      "response": "Entendo sua situação. Existem condições facilitadas com parcelamento e descontos. Posso verificar a melhor opção para você.",
+      "keywords": [
+        "desempregado",
+        "sem renda"
+      ],
+      "version": "1.3.0",
+      "hash": "6188d32543e8c10e4e3f18bc85e0d7e0fefd6cc516b2f9abfc189067e9e35a8d"
+    },
+    {
+      "id": "8472a642dbdb9763",
+      "chunk_index": 21,
+      "source": "base_coren.json",
+      "category": "duvida",
+      "text": "eu não sabia que estava devendo",
+      "response": "Pode acontecer por dados desatualizados, mas a cobrança continua válida. Podemos resolver agora com condições facilitadas.",
+      "keywords": [
+        "não sabia",
+        "desconhecimento"
+      ],
+      "version": "1.3.0",
+      "hash": "8472a642dbdb9763a0f9e1db80c826237bc503b3045436bc3cff62720c072464"
+    },
+    {
+      "id": "87449f6074a8ae77",
+      "chunk_index": 22,
+      "source": "base_coren.json",
+      "category": "duvida",
+      "text": "quais as vantagens de estar regular",
+      "response": "Quando seu Coren está regular, você atua dentro da lei, com respaldo legal e proteção profissional. Sua anuidade em dia garante segurança jurídica, participação em concursos, emissão de documentos e benefícios exclusivos.",
+      "keywords": [
+        "vantagens",
+        "benefícios"
+      ],
+      "version": "1.3.0",
+      "hash": "87449f6074a8ae774a99d3400fb58a880161e6bf1bfeedfb9d9ee124f78aa2db"
+    },
+    {
+      "id": "cc3b3e66b6ae64bf",
+      "chunk_index": 23,
+      "source": "base_coren.json",
+      "category": "outros",
+      "text": "endereço coren pi",
+      "response": "Rua Magalhães Filho, 655 – Centro/Sul, Teresina – PI, CEP 64001-350. Telefone: (86) 3200-9999. E-mail: protocolo@coren-pi.org.br",
+      "keywords": [
+        "endereço",
+        "localização",
+        "coren pi"
+      ],
+      "version": "1.3.0",
+      "hash": "cc3b3e66b6ae64bf225e7ef60b6705d3ce4950f5a7f7d6567160273b99b65709"
+    },
+    {
+      "id": "5acce9714da3c080",
+      "chunk_index": 24,
+      "source": "base_coren.json",
+      "category": "outros",
+      "text": "endereço parnaíba",
+      "response": "Rua Pedro II, 1526, Centro, Parnaíba – PI.",
+      "keywords": [
+        "parnaíba",
+        "endereço"
+      ],
+      "version": "1.3.0",
+      "hash": "5acce9714da3c080a98ee2be148b3638f4f4b7784de9a9b83691b367043ea801"
+    },
+    {
+      "id": "f181ad2b9a207865",
+      "chunk_index": 25,
+      "source": "base_coren.json",
+      "category": "outros",
+      "text": "endereço picos",
+      "response": "Rua do Cruzeiro, 229, Centro, Picos – PI.",
+      "keywords": [
+        "picos",
+        "endereço"
+      ],
+      "version": "1.3.0",
+      "hash": "f181ad2b9a207865b6cf6bdf8b0d23a69eeafcede5866691782a2eeba2651780"
+    },
+    {
+      "id": "8c131e2a3b33b447",
+      "chunk_index": 26,
+      "source": "base_coren.json",
+      "category": "outros",
+      "text": "endereço floriano",
+      "response": "Rua Fernando Marques, 520, Centro, Floriano – PI.",
+      "keywords": [
+        "floriano",
+        "endereço"
+      ],
+      "version": "1.3.0",
+      "hash": "8c131e2a3b33b447ed86e44aac9b712721026361da836006888632738d321ed0"
+    }
+  ]
+}
