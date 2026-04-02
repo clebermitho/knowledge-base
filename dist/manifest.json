@@ -1,0 +1,25 @@
+{
+  "version": "1.3.0",
+  "generated_at": "2026-04-02T21:29:32.271354+00:00",
+  "pipeline_hash": "bc11b699af269f5dd8ba6e750cc41815ab260541df97c79212d9f236143c7ecb",
+  "sources": [
+    {
+      "filename": "base_coren.json",
+      "source_hash": "4ff04b631aaa422a8f7c82f87dfaaffa6d26f0183e9aeb60687879c37916d98d",
+      "ingested_at": "2026-04-02T21:29:32.270905+00:00"
+    },
+    {
+      "filename": "programação ia.json",
+      "source_hash": "62a5694bea75d8af434870d3b3c5c6479751fa29ab4cc7219474557e90060f88",
+      "ingested_at": "2026-04-02T21:29:32.271059+00:00"
+    }
+  ],
+  "stats": {
+    "total_chunks": 27,
+    "deduplicated": 0
+  },
+  "artifacts": [
+    "chunks_latest.json",
+    "config_latest.json"
+  ]
+}

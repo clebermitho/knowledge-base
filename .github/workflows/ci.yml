@@ -62,3 +62,26 @@ jobs:
         run: |
           if [ ! -f "VERSION" ]; then echo "❌ VERSION file missing"; exit 1; fi
           echo "✅ VERSION: $(cat VERSION)"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python test dependencies
+        run: pip install pytest
+
+      - name: Run pipeline unit tests
+        run: python -m pytest tests/ -v
+
+      - name: Run knowledge base pipeline
+        run: python -m pipeline.run_pipeline
+
+      - name: Validate pipeline artifacts
+        run: |
+          python -c "
+          from pipeline.validate import validate_all
+          import sys
+          ok = validate_all()
+          sys.exit(0 if ok else 1)
+          "
